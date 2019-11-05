@@ -1,0 +1,41 @@
+body {
+  background: lightblue;
+}
+.body-copy {
+  padding-left: 2rem;
+}
+nav {
+  display:flex;
+  justify-content: space-around;
+}
+#preloader {
+  position:absolute;
+  width: 100px;
+  height:50px;
+  left: calc(50vw - 50px);
+  top: calc(50vh - 25px);
+  display:flex;
+  justify-content: space-between;
+}
+#preloader > div {
+  background:black;
+  width:10px;
+  height:50px;
+  transform: scaleY(0);
+  animation: 1s grow infinite alternate;
+}
+
+@keyframes grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+
+
+
+
+

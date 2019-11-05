@@ -1,0 +1,36 @@
+{
+  "name": "t9_cars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy":"git add --all && git commit -m 'automated' && git push &&  npm run move && npm run minify",
+    "deploy": "gh-pages -d dist",
+    "minify:css": "minify style.css > dist/style.css",
+    "minify:js": "minify index.js > dist/index.js",
+    "minify:html": "minify index.html > dist/index.html",
+    "move:manifest":"cp manifest.json dist/manifest.json",
+    "move:offline":"cp offline.html dist/offline.html",
+    "move:favicon":"cp index.png dist/index.png",
+    "move:pwabuilder":"cp pwabuilder-sw.js dist/pwabuilder-sw.js",
+    "move:images":"cp -r images/* dist/images/",
+    "minify":"npm-run-all minify:*",
+    "move":"rm -rf dist/ && mkdir dist && mkdir dist/images && npm-run-all move:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jofhatkea/t9_2019_autumn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jofhatkea/t9_2019_autumn/issues"
+  },
+  "homepage": "https://github.com/jofhatkea/t9_2019_autumn#readme",
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "minify": "^4.1.3",
+    "npm-run-all": "^4.1.5"
+  }
+}

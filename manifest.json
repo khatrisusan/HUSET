@@ -1,0 +1,113 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Document",
+    "scope": "/t9_2019_autumn/",
+    "display": "fullscreen",
+    "start_url": "https://jofhatkea.github.io/t9_2019_autumn/",
+    "short_name": "Document",
+    "theme_color": "transparent",
+    "description": "Yet another book shop",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "images/2df0219e-b626-d74b-668f-dfca3ba27304.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "images/7f84c32b-63a6-9968-8187-7aaf83a1c3df.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "images/c2931bbc-c882-489e-478a-3b6246adfbf1.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "images/fb8f29d6-8b0d-f9b8-2ab3-8c79fcb73e54.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "images/0d5b064c-5432-4815-3438-dec560568625.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "images/86aa7c3f-52ce-652c-a6e5-021ea43cb2a2.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "images/3eaea9d3-c359-8671-2006-ed2c8cbc9acb.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "images/2a4a951b-7cc7-4754-6ab6-7328cf1637f0.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "images/68363695-39f0-518e-9916-388db7183928.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "images/9602db5c-7a23-03bf-3a09-20236185c8d6.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/e63973e8-a922-0763-0e7c-7324c2bbdafc.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "images/da327703-c821-dbfc-f580-c6422ce9171b.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "images/b9fc11aa-5ae8-9d36-0f05-017e81e22b44.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "images/45cc744c-dc68-db47-843d-8b923e91dc53.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "images/d2fa44e4-4438-ce43-ede8-8d0cb8da7e37.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "images/e8cbe21b-f62c-e5be-20c7-8bddf22dc11f.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "images/5844a474-ba36-4cfd-2bca-99d0f1314934.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "images/f78849fe-0751-c591-beeb-dba899ef26bd.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "images/97ba8089-19e8-2c8d-2f01-3cecfdc037fa.webPlatform.png",
+            "sizes":"76x76",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": []
+}

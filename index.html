@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Yet another book shop">
+   <link rel="manifest" href="manifest.json">
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/png" href="index.png">
+   <script>
+   // This is the "Offline copy of pages" service worker
+
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("pwabuilder-sw.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      });
+  }
+}
+
+
+
+
+    let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
+
+async function install() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    console.log(deferredPrompt)
+    deferredPrompt.userChoice.then(function(choiceResult){
+
+      if (choiceResult.outcome === 'accepted') {
+      console.log('Your PWA has been installed');
+    } else {
+      console.log('User chose to not install your PWA');
+    }
+
+    deferredPrompt = null;
+
+    });
+
+
+  }
+}
+
+
+   </script>
+ </head>
+ <body>
+ <form>
+   <label for="searchField">
+   Search
+ <input type="search" id="searchField">
+ </label><input type="submit" value="Search"></form>
+  <h1>Awesome Used <span style="text-decoration: line-through">Cars</span> Books</h1>
+  <nav>
+    <a href="index.html">All</a>
+  </nav>
+   <section id="posts"></section>
+   <template class="postTemplate">
+     <article>
+       <header>
+         <h1>TITLE GOES HERE</h1>
+         <p>by <span class="publisher"></span></p>
+         <img src="" alt="" class="cover">
+       </header>
+       <section class="body-copy">BODY STUFF HERE</section>
+
+     </article>
+   </template>
+   <button onclick="install()">
+  Install
+</button>
+
+   <script src="index.js"></script>
+ </body>
+ </html>
